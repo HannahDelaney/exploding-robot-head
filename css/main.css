@@ -40,13 +40,15 @@ body {
   position: absolute;
   top: 4rem;
   transform: translate(297%);
+  transition: all 200ms linear;
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
   position: absolute;
-  top: 1.5rem;
+  top: 1.6rem;
+  transition: all 200ms linear;
 }
 
 .robot-head-left {
@@ -58,11 +60,11 @@ body {
 }
 
 .robot:hover .robot-head-left {
-  transform: translate(-5%, -20%);
+  transform: translate(-5%, -15%);
 }
 
 .robot:hover .robot-head-right {
-  transform: translate(160%, -20%);
+  transform: translate(160%, -15%);
 }
 
 .robot:hover .robot-brain {
