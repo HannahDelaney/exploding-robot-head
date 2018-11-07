@@ -54,10 +54,10 @@ body {
   transform: translateX(128%);
 }
 
-.robot-head-left:hover {
-
+.robot:hover .robot-head-left{
+  transform: translate(-5%, -20%);
 }
 
-.robot-head-right:hover {
-
+.robot:hover .robot-head-right{
+  transform: translate(160%, -20%);
 }
