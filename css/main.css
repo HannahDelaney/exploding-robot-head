@@ -16,8 +16,8 @@ body {
 .banner {
   background-color: #2b3851;
   width: 100%;
-  position: absolute;
-  padding-top: 5rem;
+  position: relative;
+  padding-top: 4rem;
 }
 
 .robot {
@@ -25,7 +25,9 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
+
 /* no position absolute .robot or .robot-body, center justify in a different way */
+
 .robot-body {
   width: 320px;
   display: block;
@@ -37,13 +39,14 @@ body {
   width: 46px;
   position: absolute;
   top: 4rem;
+  transform: translate(297%);
 }
 
 .robot-head-right,
 .robot-head-left {
   width: 125px;
   position: absolute;
-  top: 2.6rem;
+  top: 1.5rem;
 }
 
 .robot-head-left {
@@ -54,10 +57,14 @@ body {
   transform: translateX(128%);
 }
 
-.robot:hover .robot-head-left{
+.robot:hover .robot-head-left {
   transform: translate(-5%, -20%);
 }
 
-.robot:hover .robot-head-right{
+.robot:hover .robot-head-right {
   transform: translate(160%, -20%);
+}
+
+.robot:hover .robot-brain {
+  top: 3rem;
 }
